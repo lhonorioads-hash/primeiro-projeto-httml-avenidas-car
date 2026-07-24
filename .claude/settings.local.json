@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/c/Users/User/Website-Skills\" 2>&1 | head -100)",
+      "Read(//c/Users/User/Website-Skills/**)",
+      "Bash(rm -f \"/c/Users/User/avenidas-car/AGENTS.md.bak\"; echo ok)",
+      "Bash(npm run *)",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).filter\\(k => /insta/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(chromium-cli --help)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(ls -la \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\fotos-instagram\" 2>&1 | head -60; echo \"---COUNT---\"; ls \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\fotos-instagram\" 2>&1 | wc -l)",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__models_explore",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__generate_image",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__generate_video",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__balance",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__job_display",
+      "Bash(mkdir -p \"/c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad\")",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_184048_869289a0-0a76-469c-8923-a4bcc21f26ba.png\" -o \"/c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/hero-showroom.png\")",
+      "Read(//c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad//**)",
+      "Bash(curl -sL \"https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_190106_ee9b5c31-993f-4561-8bd2-f51b82828792.png\" -o \"/c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/hero-showroom-v2.png\")",
+      "Bash(curl -sL https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_194509_b4a9c182-5e6a-4706-9564-d9aa30cceab3.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/detail-shot.png)",
+      "Bash(curl -sL https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_194512_ead08b4a-172c-4939-bd4e-fd05227dbce8.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/wide-showroom.png)",
+      "Read(//c/Users/User/**)",
+      "Bash(mkdir -p \"avenidas-car-backup-20260723\")",
+      "Bash(robocopy \"avenidas-car\" \"avenidas-car-backup-20260723\" /E /XD node_modules .next /XF *.tsbuildinfo)",
+      "Bash(cp __TRACKED_VAR__/hero-showroom-v2.png 'C:\\\\Users\\\\User\\\\avenidas-car\\\\src\\\\assets\\\\cinematic\\\\showroom-hero.png')",
+      "Bash(cp __TRACKED_VAR__/detail-shot.png 'C:\\\\Users\\\\User\\\\avenidas-car\\\\src\\\\assets\\\\cinematic\\\\showroom-detail.png')",
+      "Bash(cp __TRACKED_VAR__/wide-showroom.png 'C:\\\\Users\\\\User\\\\avenidas-car\\\\src\\\\assets\\\\cinematic\\\\showroom-wide.png')",
+      "Bash(node -e \"console.log\\(require.resolve\\('sharp'\\)\\)\")",
+      "Bash(powershell -NoProfile -Command \"Get-Process -Id 27336 -ErrorAction SilentlyContinue | Select-Object Id, ProcessName, Path, StartTime\")",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 27336 -Force -ErrorAction SilentlyContinue; Start-Sleep -Milliseconds 500; Get-Process -Id 27336 -ErrorAction SilentlyContinue\")",
+      "Bash(timeout 15 node -e ' *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{time_total}s\\\\n\" --max-time 20 \"http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshowroom-hero.3_n-s3vbwa_6k.jpg&w=1080&q=75\")",
+      "Bash(time curl -s -o /tmp/out.jpg -w \"%{http_code} %{time_total}s size=%{size_download}\\\\n\" --max-time 25 \"http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshowroom-hero.3_n-s3vbwa_6k.jpg&w=1080&q=75\")",
+      "Bash(npx tsc *)",
+      "Bash(xargs -I{} sh -c 'stat -c \"%Y %n\" \"{}\" 2>/dev/null')",
+      "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__media_upload_widget",
+      "Bash(curl -sL https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/5fe441c8-78ea-4b7b-885e-3e8dc53c34f9.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/audi-hero-original.png)",
+      "Bash(curl -sL https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_224958_0f20afda-29a1-4464-b9b6-b9938b75055f.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/audi-hero-dollyin.png)",
+      "Bash(curl -sL -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/logo-upload.png -w '%{http_code} size=%{size_download}\\\\n' https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/4ecf8a9a-0639-496b-971b-674394e6bd1f.png)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\User\\avenidas-car"
+    ]
+  }
+}

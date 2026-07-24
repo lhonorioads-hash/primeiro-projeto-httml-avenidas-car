@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  /* Paleta da marca — preto profundo, grafite, branco quente, vermelho Avenidas Car de destaque */
+  --color-ink: #0a0a0b;
+  --color-ink-soft: #131315;
+  --color-surface: #1c1c1f;
+  --color-surface-hover: #26262a;
+  --color-steel: #8a8d93;
+  --color-steel-soft: #b8bac0;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line-soft: rgba(255, 255, 255, 0.14);
+
+  --color-paper: #fafafa;
+  --color-paper-line: rgba(10, 10, 11, 0.08);
+
+  --color-red: #c8202f;
+  --color-red-bright: #e8433a;
+  --color-red-dim: #7a141f;
+
+  --background: var(--color-ink);
+  --foreground: #f2f1ec;
+
+  /* Espaçamento base 4/8pt */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 6rem;
+  --space-9: 8rem;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-surface: var(--color-surface);
+  --color-surface-hover: var(--color-surface-hover);
+  --color-steel: var(--color-steel);
+  --color-steel-soft: var(--color-steel-soft);
+  --color-paper: var(--color-paper);
+  --color-red: var(--color-red);
+  --color-red-bright: var(--color-red-bright);
+  --color-red-dim: var(--color-red-dim);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-oswald);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Título grande — tracking levemente negativo (frontend-design, Tipografia) */
+.display-heading {
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+
+.section-heading {
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+.red-gradient-text {
+  background: linear-gradient(120deg, var(--color-red-bright), var(--color-red) 60%, var(--color-red-dim));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
