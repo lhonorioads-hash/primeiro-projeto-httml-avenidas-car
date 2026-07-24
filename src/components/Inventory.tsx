@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Car, Gauge, Calendar, Settings2 } from "lucide-react";
+import Image from "next/image";
+import { Gauge, Calendar, Settings2 } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { CATEGORIES, VEHICLES, formatKm, formatPrice, type VehicleCategory } from "@/lib/vehicles";
 import { whatsappLink } from "@/lib/constants";
@@ -102,12 +103,22 @@ export function Inventory() {
             {filtered.map((v, i) => (
               <Reveal key={v.id} delay={(i % 3) * 0.06}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[.1] bg-surface transition-colors hover:border-white/[.22]">
-                  <div className="relative flex aspect-[16/10] items-center justify-center bg-gradient-to-br from-ink-soft to-surface">
-                    <Car
-                      className="h-16 w-16 text-steel transition-transform duration-300 group-hover:scale-105"
-                      strokeWidth={1}
+                  <div className="relative aspect-[16/10] overflow-hidden bg-surface">
+                    <Image
+                      src={v.image}
+                      alt={`${v.brand} ${v.model} disponível na Avenidas Car`}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
-                    <span className="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs font-medium text-[#f2f1ec] backdrop-blur-sm">
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background:
+                          "linear-gradient(180deg, rgba(10,10,11,0.05) 0%, transparent 30%, rgba(10,10,11,0.15) 100%)",
+                      }}
+                    />
+                    <span className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-[#f2f1ec] backdrop-blur-sm">
                       {v.category}
                     </span>
                   </div>

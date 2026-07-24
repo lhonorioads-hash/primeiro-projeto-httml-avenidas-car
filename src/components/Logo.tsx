@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "@/assets/brand/logo.png";
 
-export function Logo({ className = "h-7 w-auto" }: { className?: string }) {
+export function Logo({ className = "h-8 w-auto md:h-6" }: { className?: string }) {
   return (
     <Image
       src={logo}

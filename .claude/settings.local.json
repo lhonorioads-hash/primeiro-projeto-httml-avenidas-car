@@ -43,7 +43,18 @@
       "mcp__d178a813-6a1e-4978-bd92-c7c4cf171580__media_upload_widget",
       "Bash(curl -sL https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/5fe441c8-78ea-4b7b-885e-3e8dc53c34f9.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/audi-hero-original.png)",
       "Bash(curl -sL https://d8j0ntlcm91z4.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/hf_20260723_224958_0f20afda-29a1-4464-b9b6-b9938b75055f.png -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/audi-hero-dollyin.png)",
-      "Bash(curl -sL -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/logo-upload.png -w '%{http_code} size=%{size_download}\\\\n' https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/4ecf8a9a-0639-496b-971b-674394e6bd1f.png)"
+      "Bash(curl -sL -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/logo-upload.png -w '%{http_code} size=%{size_download}\\\\n' https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/4ecf8a9a-0639-496b-971b-674394e6bd1f.png)",
+      "Bash(mv chevrolet-prisma.jpg ford-ka.jpg)",
+      "Bash(mv ford-fiesta.jpg chevrolet-prisma.jpg)",
+      "Bash(ffmpeg -version)",
+      "Bash(where ffmpeg *)",
+      "Read(//c/ffmpeg/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(ffprobe -v error -show_entries format=duration,size,bit_rate -show_entries stream=width,height,codec_name -of default=noprint_wrappers=1 \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\passaram-pela-loja\\\\golfbranco.mp4\")",
+      "Bash(cp \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\passaram-pela-loja\\\\golfbranco.mp4\" \"C:\\\\Users\\\\User\\\\avenidas-car\\\\public\\\\videos\\\\passaram-pela-loja\\\\golf-branco.mp4\")",
+      "Bash(cp \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\passaram-pela-loja\\\\golprata.mp4\" \"C:\\\\Users\\\\User\\\\avenidas-car\\\\public\\\\videos\\\\passaram-pela-loja\\\\gol-prata.mp4\")",
+      "Bash(cp \"C:\\\\Users\\\\User\\\\fotos-avenidascar\\\\passaram-pela-loja\\\\hyundaiI30.mp4\" \"C:\\\\Users\\\\User\\\\avenidas-car\\\\public\\\\videos\\\\passaram-pela-loja\\\\hyundai-i30.mp4\")",
+      "Bash(curl -sL -o /c/Users/User/AppData/Local/Temp/claude/C--Users-User-avenidas-car/e1eb63cb-be3c-45ff-aef8-34179a9efca8/scratchpad/audi-hero-mobile-vertical.png -w '%{http_code} size=%{size_download}\\\\n' https://d2ol7oe51mr4n9.cloudfront.net/user_3GuMXAysg9mSgDixbWes590mjzu/d18b8798-c3bc-444b-9ae2-bffe56fc0e90.png)"
     ],
     "additionalDirectories": [
       "C:\\Users\\User\\avenidas-car"

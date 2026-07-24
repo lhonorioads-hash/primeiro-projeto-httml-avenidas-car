@@ -1,24 +1,26 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useRef } from "react";
+import { useReducedMotion } from "framer-motion";
 import { Reveal } from "./Reveal";
-import jeepCompass from "@/assets/photos/estoque/jeep-compass.jpg";
-import toyotaCorolla from "@/assets/photos/estoque/toyota-corolla.jpg";
-import hondaCivic from "@/assets/photos/estoque/honda-civic.jpg";
+import { InstagramGlyph as InstagramIcon } from "./icons/InstagramGlyph";
+import { INSTAGRAM_URL } from "@/lib/constants";
 
 const FEATURED = [
   {
-    src: jeepCompass,
-    alt: "Jeep Compass seminovo do estoque da Avenidas Car",
-    tag: "SUV",
+    src: "/videos/passaram-pela-loja/golf-branco.mp4",
+    alt: "Volkswagen Golf branco que passou pela Avenidas Car",
+    tag: "Hatch",
   },
   {
-    src: toyotaCorolla,
-    alt: "Toyota Corolla seminovo do estoque da Avenidas Car",
-    tag: "Sedan",
+    src: "/videos/passaram-pela-loja/gol-prata.mp4",
+    alt: "Volkswagen Gol prata que passou pela Avenidas Car",
+    tag: "Hatch",
   },
   {
-    src: hondaCivic,
-    alt: "Honda Civic seminovo do estoque da Avenidas Car",
-    tag: "Sedan",
+    src: "/videos/passaram-pela-loja/hyundai-i30.mp4",
+    alt: "Hyundai i30 que passou pela Avenidas Car",
+    tag: "Hatch",
   },
 ];
 
@@ -45,30 +47,62 @@ export function FeaturedVehicles() {
 
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
           {FEATURED.map((item, i) => (
-            <Reveal key={item.alt} delay={i * 0.08}>
-              <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/[.1]">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes="(min-width: 640px) 33vw, 100vw"
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(180deg, transparent 50%, rgba(10,10,11,0.75) 100%)",
-                  }}
-                />
-                <span className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-[#f2f1ec] backdrop-blur-sm">
-                  {item.tag}
-                </span>
-              </div>
+            <Reveal key={item.src} delay={i * 0.08}>
+              <FeaturedVideoCard item={item} />
             </Reveal>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function FeaturedVideoCard({
+  item,
+}: {
+  item: (typeof FEATURED)[number];
+}) {
+  const prefersReducedMotion = useReducedMotion();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (prefersReducedMotion) return;
+    videoRef.current?.play().catch(() => {});
+  }, [prefersReducedMotion]);
+
+  return (
+    <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/[.1] bg-surface">
+      <video
+        ref={videoRef}
+        src={item.src}
+        aria-label={item.alt}
+        muted
+        loop
+        playsInline
+        autoPlay={!prefersReducedMotion}
+        controls={!!prefersReducedMotion}
+        preload="metadata"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+      />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, transparent 50%, rgba(10,10,11,0.75) 100%)",
+        }}
+      />
+      <span className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-xs font-medium text-[#f2f1ec] backdrop-blur-sm">
+        {item.tag}
+      </span>
+      <a
+        href={INSTAGRAM_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-4 left-4 right-4 inline-flex items-center justify-center gap-2 rounded-full bg-black/55 px-4 py-2 text-xs font-semibold text-[#f2f1ec] backdrop-blur-sm transition-colors hover:bg-black/75"
+      >
+        <InstagramIcon className="h-3.5 w-3.5" />
+        Assistir com som no Instagram
+      </a>
+    </div>
   );
 }

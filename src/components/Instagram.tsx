@@ -8,7 +8,7 @@ import audiA3 from "@/assets/photos/estoque/audi-a3.jpg";
 import hondaHrv from "@/assets/photos/estoque/honda-hrv.jpg";
 import fordFocus from "@/assets/photos/estoque/ford-focus.jpg";
 import chevroletPrisma from "@/assets/photos/estoque/chevrolet-prisma.jpg";
-import fordFiesta from "@/assets/photos/estoque/ford-fiesta.jpg";
+import fordKa from "@/assets/photos/estoque/ford-ka.jpg";
 import peugeot207 from "@/assets/photos/estoque/peugeot-207.jpg";
 import chevroletCelta from "@/assets/photos/estoque/chevrolet-celta.jpg";
 import vwVoyage from "@/assets/photos/estoque/vw-voyage.jpg";
@@ -22,7 +22,7 @@ const POSTS = [
   { src: hondaHrv, alt: "Honda HR-V que passou pela Avenidas Car" },
   { src: fordFocus, alt: "Ford Focus que passou pela Avenidas Car" },
   { src: chevroletPrisma, alt: "Chevrolet Prisma que passou pela Avenidas Car" },
-  { src: fordFiesta, alt: "Ford Fiesta que passou pela Avenidas Car" },
+  { src: fordKa, alt: "Ford Ka que passou pela Avenidas Car" },
   { src: peugeot207, alt: "Peugeot 207 que passou pela Avenidas Car" },
   { src: chevroletCelta, alt: "Chevrolet Celta que passou pela Avenidas Car" },
   { src: vwVoyage, alt: "Volkswagen Voyage que passou pela Avenidas Car" },
