@@ -85,6 +85,16 @@ body {
   color: transparent;
 }
 
+/* Esconde a scrollbar do carrossel horizontal sem desativar o scroll real
+   (touch, wheel, teclado continuam funcionando normalmente). */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .grain {
   position: absolute;
   inset: 0;

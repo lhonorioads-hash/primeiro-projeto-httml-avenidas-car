@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
-            <Logo className="h-6 w-auto" />
+            <Logo className="h-5 w-auto" />
             <p className="mt-4 flex items-start gap-2 text-sm text-steel-soft">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
               {ADDRESS.full}
